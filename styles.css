@@ -129,7 +129,6 @@ footer {
 .round-borders-standard {
 	border-radius: 10px;
 }
-
 .icon-bg {
 	width: 50px;
 	height: 50px;
@@ -166,12 +165,12 @@ footer {
 .box {
 	width: 30%;
 	float: left;
-	display: block;
 }
 .box-content {
 	margin-left: 70px;
-	padding-left: 10px;
-	padding-right: 50px;
+	padding-right: 39px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .icon {
 	height: 70px;
@@ -180,8 +179,10 @@ footer {
 	float: left;
 	font-size: 26px;
 	text-align: center;
-	line-height: 70px;
+	line-height: 67px;
 	color: #EBEBEB;
 	border-radius: 10px;
-	padding-top: -10px;
+}
+.icon-line-height {
+	line-height: 67px;
 }
