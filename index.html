@@ -2,89 +2,183 @@
 <html>
 	<head>
 		<title>site name</title>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="fonts/Font-Awesome/css/font-awesome.css" type="text/css" />
 	</head>
 
 	<body>
-		<div>
-			<div id="logo">
+		<div id="logo-container">
+			<span id="logo">
 				<h3>SITE NAME</h3>
-			</div>
+			</span>
 		</div>
 
-		<div id="menu">
-			<div>
-				<section>
-					<a href="#home" id="home_ref" class="menu_link">HOME</a>
-				</section>
-			</div>
-			<div>
-				<section>
-					<a href="#about" class="menu_link">ABOUT</a>
-				</section>
-			</div>
-			<div>
-				<section>
-					<a href="#services" class="menu_link">SERVICES</a>
-				</section>
-			</div>
-			<div>
-				<section>
-					<a href="#products" class="menu_link">PRODUCTS</a>
-				</section>
-			</div>
-			<div>
-				<section>
-					<a href="#contact" class="menu_link">CONTACT</a>
-				</section>
-			</div>
-		</div>
-
-		<div id="banner">
-			<img src="background.png" alt="background" />
-		</div>
-
-		<div id="row1">
-			<h2>LOREM IPSUM</h2>
-			<p>Donec nec justo eget felis facilisis fermentum.</p>
-			<p>Aliquam portti or mauris sit amet orci. Aenean dignissim pallentesque felis.</p>
-			<input type="button" id="read_more" value="READ MORE" />
-		</div>
-
-		<div id="row2">
-			<h2>VIVAMUS VEST</h2>
-			<div>
+		<div id="page_content">
+			<div id="menu">
 				<div>
-					<div>
-					<!-- image -->
+					<section>
+						<a href="#home" id="home_ref" class="menu_link">HOME</a>
+					</section>
+				</div>
+				<div>
+					<section>
+						<a href="#about" class="menu_link">ABOUT</a>
+					</section>
+				</div>
+				<div>
+					<section>
+						<a href="#services" class="menu_link">SERVICES</a>
+					</section>
+				</div>
+				<div>
+					<section>
+						<a href="#products" class="menu_link">PRODUCTS</a>
+					</section>
+				</div>
+				<div>
+					<section>
+						<a href="#contact" class="menu_link">CONTACT</a>
+					</section>
+				</div>
+			</div>
+
+			<div id="banner">
+				<img src="background.png" alt="background" class="standard-box-shadow"/>
+			</div>
+
+			<div id="row1">
+				<h2>LOREM IPSUM</h2>
+				<p>Donec nec justo eget felis facilisis fermentum.</p>
+				<p>Aliquam portti or mauris sit amet orci. Aenean dignissim pallentesque felis.</p>
+				<div class="block_more">
+					<div class="row-element">
+						<div class="line-separator"></div>
+						<div class="line-separator"></div>
+						<div class="line-separator"></div>
 					</div>
-					<div>
-						<b>FUSCE PELLENTESQUE SUSCIPIT NIBN</b>
-						<p>Sed egestas, ante et volpuate volutpap, eros</p>
-						<a href="#more_info_1" class="more_info"><b>MORE INFO</b></a>
+					<input type="button" class="button-danger" class="row-element" value="READ MORE" />
+					<div class="row-element">
+						<div class="line-separator"></div>
+						<div class="line-separator"></div>
+						<div class="line-separator"></div>
 					</div>
 				</div>
+			</div>
+
+			<div id="row2">
+				<h2>VIVAMUS VEST</h2>
 				<div>
-					<!-- image -->
-					<b>INTEGER VITAE LIBERO AC RISUS EGESTAS</b>
-					<p>Sed egestas, ante et volpuate volutpap, eros</p>
-					<a href="#more_info_2" class="more_info"><b>MORE INFO</b></a>
-				</div>
-				<div>
-					<!-- image -->
-					<b>VESTIBULUM COMMODO FELIS QUIS TORT</b>
-					<p>Sed egestas, ante et volpuate volutpap, eros</p>
-					<a href="#more_info_3" class="more_info"><b>MORE INFO</b></a>
+					<div class="box">
+							<div class="icon">
+								<i class="fa fa-pencil-square " aria-hidden="true"></i>
+							</div>
+
+							<div class="box-content">
+								<b>FUSCE PELLENTESQUE SUSCIPIT NIBN</b>
+								<p class="more-info">Sed egestas, ante et vulputate volutpat, eros pede semper est, </p>
+								<a href="#more_info_1" class="more_info"><b>MORE INFO</b></a>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+					</div>
+
+					<div class="box">
+							<div class="icon">
+								<i class="fa fa-users" aria-hidden="true"></i>
+							</div>
+
+							<div class="box-content">
+								<b>INTEGER VITAE LIBERO AC RISUS EGESTAS</b>
+								<p class="more-info">Sed egestas, ante et vulputate volutpat, eros pede semper est, </p>
+								<a href="#more_info_2" class="more_info"><b>MORE INFO</b></a>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+					</div>
+
+					<div class="box">
+							<div class="icon">
+								<i class="fa fa-wrench" aria-hidden="true"></i>
+							</div>
+
+							<div class="box-content">
+								<b>VESTIBULUM COMMODO FELIS QUIS TORT</b>
+								<p class="more-info">Sed egestas, ante et vulputate volutpat, eros pede semper est, </p>
+								<a href="#more_info_3" class="more_info"><b>MORE INFO</b></a>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+					</div>
+
 				</div>
 			</div>
-		</div>
 
-		<div id="row3">
-			<h2>CRAS IACULIS</h2>
-		</div>
+			<div class="line-separator sections-separator"></div>
 
-		<div id="row4">
-			<h2>NUNC DIGNISS</h2>
+			<div id="row3">
+				<h2>CRAS IACULIS</h2>
+				<p>Fusce lobortis lorem at ipsum semper sagittis</p>
+				<div>
+					<div class="box">
+						<div class="box-content standard-box-shadow round-border-standard row3-color-more">
+							<h4>Vestibulum commodo  felis quis tortor</h4>
+							<img src="content/row_3-img_1_03.jpg"/>
+							<p>another text</p>
+							<a href="#more_info_3" class="more_info"><b>MORE INFO</b></a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box-content standard-box-shadow round-border-standard row3-color-more">
+							<h4>Vestibulum commodo  felis quis tortor</h4>
+							<img src="content/row_3-img_2_03.jpg"/>
+							<p>another text</p>
+							<a href="#more_info_3" class="more_info"><b>MORE INFO</b></a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box-content standard-box-shadow round-border-standard row3-color-more">
+							<h4>Vestibulum commodo  felis quis tortor</h4>
+							<img src="content/row_3-img_3_03.jpg"/>
+							<p>another text</p>
+							<a href="#more_info_3" class="more_info"><b>MORE INFO</b></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="line-separator sections-separator"></div>
+
+			<div id="row4">
+				<h2>NUNC DIGNISS</h2>
+				<div>
+					<h3>NUNC DIGNISS</h3>
+					<p>Praesent dapibus, neque id cursus faucibus,  tortor neque egest</p>
+					<p class="products-name">OUR PRODUCTS</p>
+					<div>
+						<div class="more-container block-more round-borders-standard product-style">Integer vit</div>
+						<div class="more-container block-more round-borders-standard product-style">donce ametuno</div>
+					</div>
+					<div>
+						<div class="more-container block-more round-borders-standard product-style">voluptanin</div>
+						<div class="more-container block-more round-borders-standard product-style">tincidun</div>
+						<div class="more-container block-more round-borders-standard product-style">porttion souti</div>
+					</div>
+					<div>
+						<div class="more-container block-more round-borders-standard product-style">namdui sinosi</div>
+						<div class="more-container block-more round-borders-standard product-style">fermnutin</div>
+					</div>
+				</div>
+				<div class="block_more">
+					<div class="row-element">
+						<div class="line-separator"></div>
+						<div class="line-separator"></div>
+						<div class="line-separator"></div>
+					</div>
+					<input type="button" class="button-danger" class="row-element" value="VIEW MORE" />
+					<div class="row-element">
+						<div class="line-separator"></div>
+						<div class="line-separator"></div>
+						<div class="line-separator"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<footer>
