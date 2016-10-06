@@ -1,0 +1,242 @@
+$logo-background-color:						rgb(235, 235, 235);
+$shadow-color:										rgb(211, 211, 211);
+$button-shadow-color:							rgb(206, 206, 206);
+$box-cras-back-color:							rgb(226, 226, 226);
+$page-content-background-color:		#EBEBEB;
+$menu-link-color:									rgb(144, 144, 144);
+$active-menu-link-color:					red;
+$border-radius:										5px;
+$logo-font:												SourceSansPro-Black;
+$menu-font:												SourceSansPro-Regular;
+$head-info-font:									SourceSansPro-Bold;
+
+.title {
+	font-family:	$head-info-font;
+	font-size: 32px;
+	color: #373435;
+	font-weight: 600;
+}
+
+.title-1 {
+	font-size: 18px;
+  color: #676364;
+}
+
+.head1 {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.regular-text {
+	font-weight: 500;
+	font-size: 14px;
+	overflow: hidden;
+	color: #676364;
+}
+
+.box {
+	width: 30%;
+	float: left;
+}
+
+.current_active_menu {
+	color: red;
+}
+
+body {
+	background-image: url("background.jpg");
+	text-align: center;
+}
+
+#row1 {
+	margin-top: 70;
+}
+
+#logo {
+	font-size: 30px;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+#logo-container {
+	position: absolute;
+	left: 50%;
+	width: 260px;
+	height: 105px;
+	background-color: $logo-background-color;
+	text-align: center;
+	box-shadow: -9px 10px $shadow-color;
+	border-radius: $border-radius;
+	margin-top: -50px;
+	margin-left: -100px;
+	font-family: $logo-font;
+}
+
+#page-content {
+	background-color: $page-content-background-color;
+	padding: 90px;
+	margin-top: 100px;
+	max-width: 1024;
+	margin: 50 auto;
+}
+
+.menu {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.menu-item {
+	border: 1px solid #d2d2d2;
+	border-width: 1px 0;
+  padding: 20px 10px;
+  margin-top: 5px;
+	display: inline-block;
+}
+
+.menu-link {
+	text-decoration: none;
+	color: $menu-link-color;
+	font: $menu-font;
+}
+
+.menu-link-active {
+	color: $active-menu-link-color;
+}
+
+.banner img {
+	border-radius: $border-radius;
+	box-shadow: -9px 10px $shadow-color;
+	width: 100%
+}
+
+.button-danger {
+	padding: 10px;
+	box-shadow: -9px 10px $button-shadow-color;
+	background-color: rgb(237, 50, 55);
+	color: white;
+	border: none;
+	border-radius: $border-radius;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.line-separator{
+	height: 1px;
+	background: rgb(194, 194, 194);
+	border-bottom: 1px solid rgb(235, 235, 235);
+	margin-top: 4px;
+}
+
+.sections-separator {
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+.row-element {
+	display: inline-block;
+	width: 40%;
+}
+
+.box-content {
+	margin-left: 70px;
+	margin-right: 39px;
+	/*padding-right: 39px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	img {
+		width: 100%;
+	}
+}
+
+.icon {
+	height: 70px;
+	width: 70px;
+	background-color: #373435;
+	float: left;
+	font-size: 26px;
+	text-align: center;
+	line-height: 67px;
+	color: #EBEBEB;
+	border-radius: $border-radius;
+	box-shadow: -9px 10px $shadow-color;
+	margin-right: 10px;
+}
+
+.more-info {
+	max-width: 70%;
+	overflow: hidden;
+  text-overflow: ellipsis;
+	max-height: 70px;
+	line-height: 1;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#row3 {
+	padding-bottom: 100px;
+}
+
+.standard-box-shadow {
+	box-shadow: -9px 10px $shadow-color;
+}
+
+.standard-box-borders {
+	border-radius: $border-radius;
+	border-top-right-radius: 0px;
+}
+
+.products-name {
+	color: red;
+	font-weight: bold;
+}
+
+.product-style {
+	padding: 10px;
+	box-shadow: -9px 10px $shadow-color;
+}
+
+.container {
+	max-width: 350px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.block-more {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.read-more-lower {
+	padding-top: 50px;
+}
+
+.arrow-style {
+	color: red;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.read-more {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#row2 .menu {
+	margin-top: 30px;
+}
+
+.row3-color-more {
+	background-color: $box-cras-back-color;
+}
+
+.more-info {
+	color: rgb(55, 52, 53);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.info {
+	text-align: left;
+}
