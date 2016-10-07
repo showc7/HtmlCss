@@ -10,6 +10,10 @@ $logo-font:												SourceSansPro-Black;
 $menu-font:												SourceSansPro-Regular;
 $head-info-font:									SourceSansPro-Bold;
 
+body {
+	font-family: SourceSansPro, sans-serif;
+}
+
 .title {
 	font-family:	$head-info-font;
 	font-size: 32px;
@@ -75,7 +79,7 @@ body {
 
 #page-content {
 	background-color: $page-content-background-color;
-	padding: 90px;
+	padding: 90px 90px 30px 90px;
 	margin-top: 100px;
 	max-width: 1024;
 	margin: 50 auto;
@@ -92,6 +96,7 @@ body {
   padding: 20px 10px;
   margin-top: 5px;
 	display: inline-block;
+	margin-right: 40px;
 }
 
 .menu-link {
@@ -107,7 +112,8 @@ body {
 .banner img {
 	border-radius: $border-radius;
 	box-shadow: -9px 10px $shadow-color;
-	width: 100%
+	width: 100%;
+	margin-top: 40px;
 }
 
 .button-danger {
@@ -119,13 +125,15 @@ body {
 	border-radius: $border-radius;
 	margin-left: 20px;
 	margin-right: 20px;
+	width: 130px;
+	height: 40px;
 }
 
 .line-separator{
 	height: 1px;
 	background: rgb(194, 194, 194);
 	border-bottom: 1px solid rgb(235, 235, 235);
-	margin-top: 4px;
+	margin-top: 7px;
 }
 
 .sections-separator {
@@ -159,6 +167,7 @@ body {
 	line-height: 67px;
 	color: #EBEBEB;
 	border-radius: $border-radius;
+	border-top-right-radius: 0px;
 	box-shadow: -9px 10px $shadow-color;
 	margin-right: 10px;
 }
@@ -169,9 +178,14 @@ body {
   text-overflow: ellipsis;
 	max-height: 70px;
 	line-height: 1;
-	margin-left: 20px;
+	margin-left: 0px;
 	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+.more-info-cras {
+	margin-left: 20px;
+	color: #373435;
 }
 
 #row3 {
@@ -221,6 +235,8 @@ body {
 .read-more {
 	margin-top: 50px;
 	margin-bottom: 50px;
+	/*line-height: 400px;*/
+	padding: 10px;
 }
 
 #row2 .menu {
@@ -239,4 +255,46 @@ body {
 
 .info {
 	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: #373435;
+}
+
+.info-more {
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.button-wrapper {
+	margin-left: -75px;
+	position: absolute;
+	left: 50%;
+	background-color: #EBEBEB;
+}
+
+.box-content-more {
+	margin-left: 70px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	img {
+		width: 100%;
+	}
+}
+
+.more-info-wrapper {
+	margin-left: -115px;
+}
+
+.row3-head-wrapper {
+	margin-bottom: 30px;
+}
+
+.container-products {
+	box-shadow: -5px 5px $shadow-color;
+	font-family: sans-serif;
+	border: 1px solid #bfbfbf;
+	border-radius: $border-radius;
 }
