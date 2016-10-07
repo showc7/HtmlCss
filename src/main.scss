@@ -13,6 +13,7 @@ $head-info-font:									SourceSansPro-Bold;
 body {
 	font-family: SourceSansPro, sans-serif;
 	padding-top: 40px;
+	min-width: 500px;
 }
 
 footer {
@@ -50,10 +51,8 @@ footer {
 .box {
 	width: 32%;
 	float: left;
-}
 
-@media (max-width:1000px) {
-	.box {
+	@media (max-width:1100px) {
 		width: 100%;
 		float: none;
 		margin-bottom: 30px;
@@ -220,6 +219,7 @@ body {
 .products-name {
 	color: red;
 	font-weight: bold;
+	font-size: 14px;
 }
 
 .product-style {
@@ -299,6 +299,9 @@ body {
 	padding-bottom: 10px;
 	img {
 		width: 100%;
+	}
+	@media (max-width:1100px) {
+		margin-left: 0px;
 	}
 }
 
