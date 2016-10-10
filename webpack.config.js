@@ -10,7 +10,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
+    filename: "static/js/bundle.js",
     publicPath: ""
   },
   watch: true,
@@ -19,7 +19,7 @@ module.exports = {
   },
   devtool: "chaep-inline-module-source-map",
   plugins: [
-    new ExtractTextPlugin('styles.css', {
+    new ExtractTextPlugin('static/styles/styles.css', {
             allChunks: true
         })
   ],
@@ -34,6 +34,14 @@ module.exports = {
           }
       },
       {
+          test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+          loader: "url-loader?limit=10000&mimetype=application/font-woff"
+      },
+      {
+          test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+          loader: "file-loader?name=[path][name].[ext]"
+      },
+      {
           test: /\.scss$/,
           loader: ExtractTextPlugin.extract('style-loader', 'css-loader!resolve-url!sass-loader?sourceMap')
       },
@@ -43,7 +51,7 @@ module.exports = {
       },
       {
           test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.png|\.jpe?g|\.gif$/,
-          loader: 'file-loader'
+          loader: 'file-loader?name=[path][name].[ext]'
       }
     ]
   }

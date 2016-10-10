@@ -1,23 +1,99 @@
-$logo-background-color:						rgb(235, 235, 235);
-$shadow-color:										rgb(211, 211, 211);
-$button-shadow-color:							rgb(206, 206, 206);
-$box-cras-back-color:							rgb(226, 226, 226);
-$page-content-background-color:		#EBEBEB;
-$menu-link-color:									rgb(144, 144, 144);
-$active-menu-link-color:					red;
-$border-radius:										5px;
-$logo-font:												SourceSansPro-Black;
-$menu-font:												SourceSansPro-Regular;
-$head-info-font:									SourceSansPro-Bold;
+@import "../static/fonts/Font-Awesome/css/font-awesome.min.css";
+
+$logo-background-color:												rgb(235, 235, 235);
+$shadow-color:																rgb(211, 211, 211);
+$button-shadow-color:													rgb(206, 206, 206);
+$box-cras-back-color:													rgb(226, 226, 226);
+$page-content-background-color:								#EBEBEB;
+$boxes-container-link-color:									rgb(144, 144, 144);
+$active-boxes-container-link-color:						#ED3E43;
+$border-radius:																5px;
+$logo-font:																		SourceSansPro-Black;
+$boxes-container-font:												SourceSansPro-Regular;
+$head-info-font:															SourceSansPro-Bold;
+
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url("../fonts/font/SourceSansPro/Black/SourceSansPro-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url("../fonts/font/SourceSansPro/Regular/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url("../fonts/font/SourceSansPro/Bold/SourceSansPro-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+/*
+@font-face {
+    font-family: SourceSansPro;
+    src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('fonts/source-sans-pro/SourceSansPro-Italic.otf');
+    font-style: italic;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('fonts/source-sans-pro/SourceSansPro-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('fonts/source-sans-pro/SourceSansPro-Light.otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('fonts/source-sans-pro/SourceSansPro-LightItalic.otf');
+    font-style: italic;
+    font-weight: 300;
+}
+*/
+.icon i .icon-font-heigth {
+	line-height: 67px;
+}
 
 body {
 	font-family: SourceSansPro, sans-serif;
-	padding-top: 40px;
+	padding-top: 50px;
 	min-width: 500px;
+	background-image: url("/content/bg-part.jpg");
+	text-align: center;
 }
 
 footer {
-	padding-bottom: 10px;
+	padding-bottom: 25px;
+	color: #dfdfdf;
+}
+
+a {
+	text-decoration: none;
+	color: #373435;
+}
+
+.line {
+	height: 1px;
+	background-color: #D2D2D2;
+	margin-bottom: 7px;
+	margin-top: 7px;
+
+	@media (max-width:500px) {
+		visibility: collapse;
+	}
 }
 
 .title {
@@ -28,16 +104,18 @@ footer {
 	margin-bottom: 10px;
 }
 
-.title-1 {
+.subtitle {
 	font-size: 18px;
   color: #676364;
+	margin-bottom: 50px;
 }
 
-.head1 {
+.subhead {
 	font-family: sans-serif;
 	font-weight: 600;
 	font-size: 16px;
 	text-align: left;
+	text-transform: uppercase;
 }
 
 .regular-text {
@@ -45,7 +123,7 @@ footer {
 	font-size: 14px;
 	overflow: hidden;
 	color: #676364;
-	font-family: $menu-font;
+	font-family: $boxes-container-font;
 }
 
 .box {
@@ -59,26 +137,21 @@ footer {
 	}
 }
 
-.current_active_menu {
+.current_active_boxes-container {
 	color: red;
 }
 
-body {
-	background-image: url("background.jpg");
-	text-align: center;
-}
-
-#row1 {
+.lorem-ipsum {
 	margin-top: 70;
 }
 
-#logo {
+.logo {
 	font-size: 30px;
 	line-height: 100px;
 	font-weight: bold;
 }
 
-#logo-container {
+.logo-container {
 	position: absolute;
 	left: 50%;
 	width: 260px;
@@ -87,41 +160,42 @@ body {
 	text-align: center;
 	box-shadow: -9px 10px $shadow-color;
 	border-radius: $border-radius;
-	margin-top: -50px;
+	margin-top: -7px;
 	margin-left: -100px;
 	font-family: $logo-font;
 }
 
-#page-content {
+.page-content {
 	background-color: $page-content-background-color;
-	padding: 90px 70px 30px 70px;
-	margin-top: 100px;
+	border-radius: $border-radius;
+	padding: 100px 30px 30px 30px;
+	margin-top: 50px;
 	max-width: 1024;
-	margin: 50 auto;
+	margin: 35px auto;
 }
 
-.menu {
+.boxes-container {
 	display: inline-block;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
-.menu-item {
+.boxes-container-item {
 	border: 1px solid #d2d2d2;
 	border-width: 1px 0;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin-top: 5px;
 	display: inline-block;
 	margin-right: 40px;
 }
 
-.menu-link {
+.boxes-container-link {
 	text-decoration: none;
-	color: $menu-link-color;
-	font: $menu-font;
+	color: $boxes-container-link-color;
+	font: $boxes-container-font;
 }
 
-.menu-link-active {
-	color: $active-menu-link-color;
+.boxes-container-link-active {
+	color: $active-boxes-container-link-color;
 }
 
 .banner img {
@@ -142,6 +216,10 @@ body {
 	margin-right: 20px;
 	width: 130px;
 	height: 40px;
+
+	@media (max-width:500px) {
+		///
+	}
 }
 
 .line-separator{
@@ -152,7 +230,7 @@ body {
 }
 
 .sections-separator {
-	margin-top: 10px;
+	//margin-top: 20px;
 	margin-bottom: 50px;
 }
 
@@ -165,7 +243,7 @@ body {
 	margin-left: 70px;
 	margin-right: 39px;
 	/*padding-right: 39px;*/
-	padding-top: 10px;
+	padding-top: 0px;
 	padding-bottom: 10px;
 	img {
 		width: 100%;
@@ -184,7 +262,7 @@ body {
 	border-radius: $border-radius;
 	border-top-right-radius: 0px;
 	box-shadow: -9px 10px $shadow-color;
-	margin-right: 10px;
+	margin-right: 25px;
 }
 
 .more-info {
@@ -203,8 +281,8 @@ body {
 	color: #373435;
 }
 
-#row3 {
-	padding-bottom: 100px;
+.nunc-digniss {
+	padding-bottom: 0px;
 }
 
 .standard-box-shadow {
@@ -217,9 +295,10 @@ body {
 }
 
 .products-name {
-	color: red;
+	color: #ed3237;
 	font-weight: bold;
 	font-size: 14px;
+	margin-top: -20px;
 }
 
 .product-style {
@@ -255,11 +334,11 @@ body {
 	padding: 10px;
 }
 
-#row2 .menu {
+.vivamus-vest  {
 	margin-top: 50px;
 }
 
-.row3-color-more {
+.nunc-digniss-color-more {
 	background-color: $box-cras-back-color;
 }
 
@@ -291,12 +370,18 @@ body {
 	position: absolute;
 	left: 50%;
 	background-color: #EBEBEB;
+
+	@media (max-width:500px) {
+		position: inherit;
+		margin-left: 0px;
+	}
 }
 
 .box-content-more {
 	margin-left: 70px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-color: #e2e2e2;
 	img {
 		width: 100%;
 	}
@@ -306,10 +391,19 @@ body {
 }
 
 .more-info-wrapper {
-	margin-left: -135px;
+	//margin-left: -135px;
+	text-align: left;
 }
 
-.row3-head-wrapper {
+.nunc-digniss-head-wrapper {
+	margin-bottom: 30px;
+}
+
+.cras-iaculis {
+	padding-bottom: 60px;
+}
+
+.cras-iaculis-head-wrapper {
 	margin-bottom: 30px;
 }
 
@@ -319,6 +413,7 @@ body {
 	border: 1px solid #bfbfbf;
 	border-radius: $border-radius;
 	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .block-head {
@@ -327,5 +422,5 @@ body {
 }
 
 .head-info {
-	margin-left: 10px;
+	margin-left: 25px;
 }
