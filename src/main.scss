@@ -43,58 +43,6 @@ $url-font-bold:			'/fonts/font/SourceSansPro/Bold/';
 		src: url('/fonts/font/Awesome/fontawesome-webfont.woff') format('woff'), url('/fonts/font/Awesome/fontawesome-webfont.ttf') format('truetype'), url('/fonts/font/Awesome/fontawesome-webfont.svg') format('svg');
 }
 
-
-/*
-@font-face {
-	font-family: SourceSansPro;
-	src: url("../fonts/font/SourceSansPro/Black/SourceSansPro-Black.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url("../fonts/font/SourceSansPro/Regular/SourceSansPro-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url("../fonts/font/SourceSansPro/Bold/SourceSansPro-Bold.ttf") format("truetype");
-    font-weight: bold;
-}
-*/
-/*
-@font-face {
-    font-family: SourceSansPro;
-    src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf');
-}
-
-@font-face {
-    font-family: SourceSansPro;
-    src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf');
-    font-weight: bold;
-}
-@font-face {
-    font-family: SourceSansPro;
-    src: url('fonts/source-sans-pro/SourceSansPro-Italic.otf');
-    font-style: italic;
-}
-@font-face {
-    font-family: SourceSansPro;
-    src: url('fonts/source-sans-pro/SourceSansPro-BoldItalic.otf');
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: SourceSansPro;
-    src: url('fonts/source-sans-pro/SourceSansPro-Light.otf');
-    font-weight: 300;
-}
-@font-face {
-    font-family: SourceSansPro;
-    src: url('fonts/source-sans-pro/SourceSansPro-LightItalic.otf');
-    font-style: italic;
-    font-weight: 300;
-}
-*/
 .icon-font-heigth:after {
 	line-height: 67px;
 }
