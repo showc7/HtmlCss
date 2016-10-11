@@ -1,1 +1,1 @@
-module.exports = __webpack_public_path__ + "static/fonts/Font-Awesome/fonts/fontawesome-webfont.eot";
+module.exports = __webpack_public_path__ + "static/fonts/font-Awesome/fonts/fontawesome-webfont.eot";

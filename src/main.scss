@@ -1,4 +1,7 @@
-@import "../static/fonts/Font-Awesome/css/font-awesome.min.css";
+//@import "../static/fonts/Font-Awesome/css/font-awesome.min.css";
+
+//@import "font-awesome";
+//@import "../static/fonts/Font-Awesome/scss/font-awesome.scss";
 
 $logo-background-color:												rgb(235, 235, 235);
 $shadow-color:																rgb(211, 211, 211);
@@ -12,7 +15,36 @@ $logo-font:																		SourceSansPro-Black;
 $boxes-container-font:												SourceSansPro-Regular;
 $head-info-font:															SourceSansPro-Bold;
 
+$url-font-black:		'/fonts/font/SourceSansPro/Black/';
+$url-font-regular:	'/fonts/font/SourceSansPro/Regular/';
+$url-font-bold:			'/fonts/font/SourceSansPro/Bold/';
 
+@font-face {
+ font-family: SourceSansPro-Black;
+ src: url($url-font-black + 'SourceSansPro-Black.eot');
+ src: url($url-font-black + 'SourceSansPro-Black.woff') format('woff'), url($url-font-black + 'SourceSansPro-Black.ttf') format('truetype'), url($url-font-black + 'SourceSansPro-Black.svg') format('svg');
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url($url-font-regular + 'SourceSansPro-Regular.eot');
+		src: url($url-font-regular + 'SourceSansPro-Regular.woff') format('woff'), url($url-font-regular + 'SourceSansPro-Regular.ttf') format('truetype'), url($url-font-regular + 'SourceSansPro-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: SourceSansPro-Bold;
+		src: url($url-font-bold + 'SourceSansPro-Bold.eot');
+		src: url($url-font-bold + 'SourceSansPro-Bold.woff') format('woff'), url($url-font-bold + 'SourceSansPro-Bold.ttf') format('truetype'), url($url-font-bold + 'SourceSansPro-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: FontAwesome;
+		src: url('/fonts/font/Awesome/fontawesome-webfont.eot');
+		src: url('/fonts/font/Awesome/fontawesome-webfont.woff') format('woff'), url('/fonts/font/Awesome/fontawesome-webfont.ttf') format('truetype'), url('/fonts/font/Awesome/fontawesome-webfont.svg') format('svg');
+}
+
+
+/*
 @font-face {
 	font-family: SourceSansPro;
 	src: url("../fonts/font/SourceSansPro/Black/SourceSansPro-Black.ttf") format("truetype");
@@ -28,7 +60,7 @@ $head-info-font:															SourceSansPro-Bold;
     src: url("../fonts/font/SourceSansPro/Bold/SourceSansPro-Bold.ttf") format("truetype");
     font-weight: bold;
 }
-
+*/
 /*
 @font-face {
     font-family: SourceSansPro;
